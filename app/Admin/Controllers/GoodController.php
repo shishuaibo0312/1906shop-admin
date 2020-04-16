@@ -26,21 +26,21 @@ class GoodController extends AdminController
     {
         $grid = new Grid(new ShopGoodsModel());
 
-        $grid->column('gid', __('Gid'));
-        $grid->column('g_name', __('G name'));
-        $grid->column('g_jiage', __('G jiage'));
-        $grid->column('g_jifen', __('G jifen'));
-        $grid->column('g_kucun', __('G kucun'));
-        $grid->column('g_img', __('G img'))->image();
+        $grid->column('gid', __('商品ID'));
+        $grid->column('g_name', __('商品名'));
+        $grid->column('g_jiage', __('商品价格'));
+        $grid->column('g_jifen', __('积分'));
+        $grid->column('g_kucun', __('商品库存'));
+        $grid->column('g_img', __('商品图片'))->image();
         //$grid->column('g_huohao', __('G huohao'));
        //$grid->column('g_imgs', __('G imgs'))->image();
-        $grid->column('g_new', __('G new'));
+     //   $grid->column('g_new', __('G new'));
 //        $grid->column('g_best', __('G best'));
 //        $grid->column('g_hot', __('G hot'));
-        $grid->column('g_count', __('G count'));
-        $grid->column('g_type', __('G type'));
-        $grid->column('brand_id', __('Brand id'));
-        $grid->column('tid', __('Tid'));
+//        $grid->column('g_count', __('G count'));
+//        $grid->column('g_type', __('G type'));
+//        $grid->column('brand_id', __('Brand id'));
+//        $grid->column('tid', __('Tid'));
 
         return $grid;
     }
